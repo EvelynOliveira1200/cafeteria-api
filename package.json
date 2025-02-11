@@ -1,7 +1,7 @@
 {
-  "name": "books-api",
+  "name": "cafeteria-api",
   "version": "1.0.0",
-  "description": "books-api projeto back-end",
+  "description": "cafeteria-api projeto back-end",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +14,7 @@
   },
   "keywords": [
     "back-end",
-    "books",
+    "coofee",
     "base",
     "js"
   ],
