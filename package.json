@@ -1,0 +1,34 @@
+{
+  "name": "books-api",
+  "version": "1.0.0",
+  "description": "books-api projeto back-end",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "CLS && nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvelynOliveira1200/books-api-back-end.git"
+  },
+  "keywords": [
+    "back-end",
+    "books",
+    "base",
+    "js"
+  ],
+  "author": "Evelyn Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EvelynOliveira1200/books-api-back-end/issues"
+  },
+  "homepage": "https://github.com/EvelynOliveira1200/books-api-back-end#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "uuid": "^11.0.5"
+  }
+}

@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "f47ca4c8-4b79-4a0c-be17-a752f7cfad48",
+		"name": "API DE LIVROS 📚📕",
+		"description": "Este projeto implementa uma API RESTful simples para gerenciar uma coleção de livros. Ele permite que os usuários realizem operações CRUD (Criar, Ler, Atualizar, Deletar) em dados de livros. 💻",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41677719"
+	},
+	"item": [
+		{
+			"name": "Mostrar Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:4000/api/books",
+				"description": "**GET /api/books:** Retorna uma lista de todos os livros na coleção."
+			},
+			"response": []
+		},
+		{
+			"name": "Add Books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Tarde De Mais\",\r\n    \"author\": \"Collen Hoover\",\r\n    \"yearPublication\": 2018,\r\n    \"publisher\": \"Galera Record\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:4000/api/books",
+				"description": "**POST /api/books:** Adiciona um novo livro à coleção. O corpo da requisição deve conter um objeto JSON representando os detalhes do livro, incluindo título, autor, ano de publicação e editora."
+			},
+			"response": []
+		},
+		{
+			"name": "Procurar por id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:4000/api/books/171e12d4-cb5d-4d87-8742-60e9664b8e23",
+				"description": "**GET /api/books/{id}**: Retorna um livro específico pelo seu ID único. O ID é passado como um parâmetro de caminho."
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar por id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"The Hobbit\",\r\n    \"author\": \"J.R.R. Tolkien\",\r\n    \"yearPublication\": 1937,\r\n    \"publisher\": \"Arqueiro\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:4000/api/books/db312441-5e35-4922-89a3-06e1db8a3add",
+				"description": "**PUT /api/books/{id}**: Atualiza um livro existente com novas informações. O ID do livro a ser atualizado é passado como um parâmetro de caminho. O corpo da requisição deve conter um objeto JSON com os detalhes atualizados do livro."
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:4000/api/books/cd1dd176-f1a6-4559-a4bd-1e166ac45c1d",
+				"description": "**DELETE /api/books/{id}**: Deleta um livro da coleção. O ID do livro a ser deletado é passado como um parâmetro de caminho."
+			},
+			"response": []
+		},
+		{
+			"name": "add xml",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<book>\r\n<title>Todas as Suas imPERFEIÇÕES</title>\r\n<author>Coolen Hoover</author>\r\n<yearPublication>2024</yearPublication>\r\n<publisher>Galera</publisher>\r\n</book>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"description": "Sintaxe básica do XML para adicionar um livro."
+			},
+			"response": []
+		}
+	]
+}
