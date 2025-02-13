@@ -32,9 +32,9 @@ const router = {
             if (!cliente || !tipo|| !descricao || !valor) {
                 throw new Error("Todos os campos são obrigatórios");
             }
-            const Pedido = new Pedido (cliente, tipo, descricao, valor);
-            lista.addPedido(Pedido);
-            res.status(200).json({ message: "Não foi possível fazer o pedido", pedido });
+            const pedido = new Pedido (cliente, tipo, descricao, valor);
+            lista.addPedido(pedido);
+            res.status(200).json({ message: "Pedido realizado com sucesso", pedido });
         } catch (error) {
             res.status(400).json({ message: "Erro", error });
         }
