@@ -79,16 +79,15 @@ const router = {
             res.status(404).json({ message: "pedido erro", error });
         }
     },
-    
+
     deletePedido: (req, res) => {
         try {
-            const pedido = req.params.id;
-            lista.deletePedido(pedido);
-
-            if (pedido.status == "pendente") {
-                lista.deletePedido(pedido);
-                
-            } res.status(200).json({ message: "Pedido cancelado" });
+            const pedido = lista.getPedidosById(req.params.id);
+            if (pedido.status == "concluido") {
+                return res.status(403).json({ message: "Pedido já foi concluído, não pode ser cancelado." });
+            }
+            lista.deletePedido(req.params.id);
+            res.status(200).json({ message: "Pedido cancelado com sucesso!" })
 
         } catch (error) {
             res.status(404).json({ message: "pedido not found", error });
