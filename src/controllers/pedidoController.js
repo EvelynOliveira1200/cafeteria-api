@@ -67,7 +67,14 @@ const router = {
     getPedidosById: (req, res) => {
         try {
             const id = req.params.id;
-            res.status(200).json(lista.getPedidosById(id));
+            const pedido = lista.getPedidosById(id);
+
+            if (pedido) {
+                res.status(200).json({ cliente: pedido.cliente, status: pedido.status });
+            } else {
+                res.status(404).json({ message: "Pedido não encontrado" });
+            }
+
         } catch (error) {
             res.status(404).json({ message: "pedido erro", error });
         }
@@ -77,7 +84,12 @@ const router = {
         try {
             const pedido = req.params.id;
             lista.deletePedido(pedido);
-            res.status(200).json({ message: "pedido cancelado" });
+
+            if (pedido.status == "pendente") {
+                lista.deletePedido(pedido);
+                
+            } res.status(200).json({ message: "Pedido cancelado" });
+
         } catch (error) {
             res.status(404).json({ message: "pedido not found", error });
         }
