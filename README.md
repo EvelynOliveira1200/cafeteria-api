@@ -1,28 +1,28 @@
-# ATIVIDADE Start-Café ☕
+## ATIVIDADE Start-Café ☕
 
 A atividade foi criada para replicar o sistema de gestão de uma cafeteria renomada, chamada Star-Café. Usando JavaScript na programação Back-End, a API possibilita que os clientes realizem pedidos e que o estabelecimento gerencie o estoque de produtos de forma eficiente.
 
-## 📲 Aplicativos Utilizados para realização do projeto
+### 📲 Aplicativos Utilizados para realização do projeto
 - Visual Studio Code
 - Node.js
 - Postman
 - Git
 
-## 📂 Depêndencias Utilizadas para realização do projeto
+### 📂 Depêndencias Utilizadas para realização do projeto
 - Express
 - Uuid
 - Dotenv
 - Cors
 - Nodemon
 
-## 📚 Métodos de API Utilizados
+### 📚 Métodos de API Utilizados
 - 1️⃣ **GET /menu**: Utilizado para buscar todos os itens que estão presentes no cardápio.
 - 2️⃣ **POST /pedidos**: Utilizado para criar novos pedidos.
 - 3️⃣ **GET /pedidos**: Utilizado para buscar todos os pedidos existentes.
 - 4️⃣ **GET /pedidos/:id**: Utilizado para retornar o status de um pedido.
 - 5️⃣ **DELETE /pedidos**: Utilizado para cancelar pedidos que ainda não foram finalizados.
 
-## 📒 Cabeçalhos que aparecerão durante a documentação
+### 📒 Cabeçalhos que aparecerão durante a documentação
 
 - **Content-Type: application/json; charset=utf-8**: Especifica o tipo de mídia da requisição ou resposta. Neste caso, todas as rotas terão o corpo no formato JSON com o padrão de caracteres UTF-8.
 - **User-Agent: PostmanRuntime/7.43.0**: Identifica o cliente que está fazendo a requisição. Neste cenário, o cliente é o Postman.
@@ -39,11 +39,11 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **Date**: Simboliza a data e a hora em que a resposta foi gerada pelo servidor.
 - **Keep-Alive: timeout=5**: Especifica o tempo em segundos que a conexão deve ser mantida viva após a resposta inicial, no caso, 5 segundos.
 
-## Endpoints(rotas) Utilizadas no projeto
+### Endpoints(rotas) Utilizadas no projeto
 
-## 🟢 **<span style="color:green">GET</span> /menu** : Retornará o cardápio da cafeteria.
+### 🟢 **<span style="color:green">GET</span> /menu** : Retornará o cardápio da cafeteria.
 
-### **Cabeçalhos HTTP da requisição:**
+#### **Cabeçalhos HTTP da requisição:**
 
 - **User-Agent**: PostmanRuntime/7.43.0
 - **Accept**: */*
@@ -53,7 +53,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **Accept-Encoding**: gzip, deflate, br
 - **Connection**: keep-alive
 
-### **Cabeçalhos HTTP da resposta:**
+#### **Cabeçalhos HTTP da resposta:**
 
 - **X-Powered-By**: Express
 - **Access-Control-Allow-Origin**: *
@@ -64,18 +64,18 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **Connection**: keep-alive
 - **Keep-Alive**: timeout=5
 
-### **Corpo da Resposta(JSON)**
+#### **Corpo da Resposta(JSON)**
 
 ![image](image-2.png)
 
-### **Código de Status**
+#### **Código de Status**
 
 - **🟩 200 OK**: A solicitação foi bem-sucedida e o cardápio foi retornado.
 - **🟥 404 Not Found**: O cardápio não foi encontrado(❌ Erro do cliente).
 
-## 🟢 **<span style="color:green">GET</span> /pedidos** : Retornará todos os pedidos que foram efetuados.
+### 🟢 **<span style="color:green">GET</span> /pedidos** : Retornará todos os pedidos que foram efetuados.
 
-### **Cabeçalhos HTTP da requisição:**
+#### **Cabeçalhos HTTP da requisição:**
 
 - **User-Agent**: PostmanRuntime/7.43.0
 - **Accept**: */*
@@ -85,7 +85,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **Accept-Encoding**: gzip, deflate, br
 - **Connection**: keep-alive
 
-### **Cabeçalhos HTTP da resposta:**
+#### **Cabeçalhos HTTP da resposta:**
 
 - **X-Powered-By**: Express
 - **Access-Control-Allow-Origin**: *
@@ -96,18 +96,18 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **Connection**: keep-alive
 - **Keep-Alive**: timeout=5
 
-### **Corpo da Resposta(JSON)**
+#### **Corpo da Resposta(JSON)**
 
 ![img](image-1.png)
 
-### **Código de Status**
+#### **Código de Status**
 
 - **🟩 200 OK**: A solicitação foi bem-sucedida e o pedido foi retornado.
 - **🟥 404 Not Found**: O pedido não foi encontrado(❌ Erro do cliente).
 
-## 🟠 **<span style="color:orange">POST</span> /pedidos** : O cliente fará um novo pedido.
+### 🟠 **<span style="color:orange">POST</span> /pedidos** : O cliente fará um novo pedido.
 
-### **Cabeçalhos HTTP da requisição:**
+#### **Cabeçalhos HTTP da requisição:**
 
 - **Content-Type**: application/json
 - **User-Agent**: PostmanRuntime/7.43.0
@@ -119,7 +119,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **Connection**: keep-alive
 - **Content-Length**: 97
 
-### **Cabeçalhos HTTP da resposta:**
+#### **Cabeçalhos HTTP da resposta:**
 
 - **X-Powered-By**: Express
 - **Access-Control-Allow-Origin**: *
@@ -130,7 +130,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **Connection**: keep-alive
 - **Keep-Alive**: timeout=5
 
-### **Corpo da Requisição(JSON)**
+#### **Corpo da Requisição(JSON)**
 
 ```json
 {
@@ -141,19 +141,19 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 }
 ```
 
-### **Corpo da Resposta(JSON)**
+#### **Corpo da Resposta(JSON)**
 
 ![img](image-3.png)
 
-### **Código de Status**
+#### **Código de Status**
 
 - **🟩 200 OK**: O pedido foi criado e registrado com sucesso.
 - **🟥 404 Not Found**: Os compos obrigátorios não foram prrenchidos(❌ Erro do cliente).
 
 
-## 🟢 **<span style="color:green">GET</span> /pedidos/:id** : Retornará os status de um pedido específico.
+### 🟢 **<span style="color:green">GET</span> /pedidos/:id** : Retornará os status de um pedido específico.
 
-### **Cabeçalhos HTTP da requisição:**
+#### **Cabeçalhos HTTP da requisição:**
 
 - **User-Agent**: PostmanRuntime/7.43.0
 - **Accept**: */*
@@ -163,7 +163,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **Accept-Encoding**: gzip, deflate, br
 - **Connection**: keep-alive
 
-### **Cabeçalhos HTTP da resposta:**
+#### **Cabeçalhos HTTP da resposta:**
 
 - **X-Powered-By**: Express
 - **Access-Control-Allow-Origin**: *
@@ -174,19 +174,19 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **Connection**: keep-alive
 - **Keep-Alive**: timeout=5
 
-### **Corpo da Resposta(JSON)**
+#### **Corpo da Resposta(JSON)**
 
 ![img](image-4.png)
 
-### **Código de Status**
+#### **Código de Status**
 
 - **🟩 200 OK**: A solicitação do status do pedido foi retornada com sucesso.
 - **🟥 404 Not Found**: O pedido não foi encontrado.
 
 
-## 🔴 **<span style="color:red">DELETE</span> /pedidos/:id** : Irá cancelar um pedido que está como status = pendente.
+### 🔴 **<span style="color:red">DELETE</span> /pedidos/:id** : Irá cancelar um pedido que está como status = pendente.
 
-### **Cabeçalhos HTTP da requisição:**
+#### **Cabeçalhos HTTP da requisição:**
 
 - **User-Agent**: PostmanRuntime/7.43.0
 - **Accept**: */*
@@ -196,7 +196,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **Accept-Encoding**: gzip, deflate, br
 - **Connection**: keep-alive
 
-### **Cabeçalhos HTTP da resposta:**
+#### **Cabeçalhos HTTP da resposta:**
 
 - **X-Powered-By**: Express
 - **Access-Control-Allow-Origin**: *
@@ -207,13 +207,13 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **Connection**: keep-alive
 - **Keep-Alive**: timeout=5
 
-### **Corpo da Resposta(JSON)**
+#### **Corpo da Resposta(JSON)**
 
 ![img](image.png)
 ![img](image-6.png)
 
 
-### **Código de Status**
+#### **Código de Status**
 
 - **🟩 200 OK**: O pedido foi cancelado com sucesso.
 - **🟥 404 Not Found**: O pedido não foi encntrado.
