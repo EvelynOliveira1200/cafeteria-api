@@ -209,7 +209,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![image](./img/image.png)
+![img](image.png)
 ![image](./img/Captura%20de%20tela%202025-02-18%20220820.png)
 
 
