@@ -66,7 +66,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![image](c:\Users\Evelyn\Pictures\Screenshots\getallmenu.png)
+![image](image-2.png))
 
 ### **Código de Status**
 
@@ -98,7 +98,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![image](./img/Captura%20de%20tela%202025-02-18%20211322.png)
+![img](image-1.png)
 
 ### **Código de Status**
 
@@ -143,7 +143,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![image](./img/postatualizado.png)
+![img](image-3.png))
 
 ### **Código de Status**
 
@@ -176,7 +176,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![image](./img/status.pedido.png)
+![img](image-4.png))
 
 ### **Código de Status**
 
@@ -210,7 +210,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 ### **Corpo da Resposta(JSON)**
 
 ![img](image.png)
-![image](./img/Captura%20de%20tela%202025-02-18%20220820.png)
+![img](image-5.png))
 
 
 ### **Código de Status**
