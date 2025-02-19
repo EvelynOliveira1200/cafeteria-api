@@ -41,7 +41,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ## Endpoints(rotas) Utilizadas no projeto
 
-- 🟢 **<span style="color:green">GET</span> /menu** : Retornará o cardápio da cafeteria.
+## 🟢 **<span style="color:green">GET</span> /menu** : Retornará o cardápio da cafeteria.
 
 ### **Cabeçalhos HTTP da requisição:**
 
@@ -66,14 +66,14 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![image](image-2.png))
+![image](image-2.png)
 
 ### **Código de Status**
 
 - **🟩 200 OK**: A solicitação foi bem-sucedida e o cardápio foi retornado.
 - **🟥 404 Not Found**: O cardápio não foi encontrado(❌ Erro do cliente).
 
-- 🟢 **<span style="color:green">GET</span> /pedidos** : Retornará todos os pedidos que foram efetuados.
+## 🟢 **<span style="color:green">GET</span> /pedidos** : Retornará todos os pedidos que foram efetuados.
 
 ### **Cabeçalhos HTTP da requisição:**
 
@@ -105,7 +105,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **🟩 200 OK**: A solicitação foi bem-sucedida e o pedido foi retornado.
 - **🟥 404 Not Found**: O pedido não foi encontrado(❌ Erro do cliente).
 
-- 🟠 **<span style="color:orange">POST</span> /pedidos** : O cliente fará um novo pedido.
+## 🟠 **<span style="color:orange">POST</span> /pedidos** : O cliente fará um novo pedido.
 
 ### **Cabeçalhos HTTP da requisição:**
 
@@ -143,7 +143,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![img](image-3.png))
+![img](image-3.png)
 
 ### **Código de Status**
 
@@ -151,7 +151,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **🟥 404 Not Found**: Os compos obrigátorios não foram prrenchidos(❌ Erro do cliente).
 
 
-- 🟢 **<span style="color:green">GET</span> /pedidos/:id** : Retornará os status de um pedido específico.
+## 🟢 **<span style="color:green">GET</span> /pedidos/:id** : Retornará os status de um pedido específico.
 
 ### **Cabeçalhos HTTP da requisição:**
 
@@ -176,7 +176,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![img](image-4.png))
+![img](image-4.png)
 
 ### **Código de Status**
 
@@ -184,7 +184,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - **🟥 404 Not Found**: O pedido não foi encontrado.
 
 
-- 🔴 **<span style="color:red">DELETE</span> /pedidos/:id** : Irá cancelar um pedido que está como status = pendente.
+## 🔴 **<span style="color:red">DELETE</span> /pedidos/:id** : Irá cancelar um pedido que está como status = pendente.
 
 ### **Cabeçalhos HTTP da requisição:**
 
@@ -210,7 +210,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 ### **Corpo da Resposta(JSON)**
 
 ![img](image.png)
-![img](image-5.png))
+![img](image-6.png)
 
 
 ### **Código de Status**
