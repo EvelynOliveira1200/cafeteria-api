@@ -16,11 +16,11 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 - Nodemon
 
 ## 📚 Métodos de API Utilizados
-1️⃣ **GET /menu**: Utilizado para buscar todos os itens que estão presentes no cardápio.
-2️⃣ **POST /pedidos**: Utilizado para criar novos pedidos.
-3️⃣ **GET /pedidos**: Utilizado para buscar todos os pedidos existentes.
-4️⃣ **GET /pedidos/:id**: Utilizado para retornar o status de um pedido.
-5️⃣ **DELETE /pedidos**: Utilizado para cancelar pedidos que ainda não foram finalizados.
+- 1️⃣ **GET /menu**: Utilizado para buscar todos os itens que estão presentes no cardápio.
+- 2️⃣ **POST /pedidos**: Utilizado para criar novos pedidos.
+- 3️⃣ **GET /pedidos**: Utilizado para buscar todos os pedidos existentes.
+- 4️⃣ **GET /pedidos/:id**: Utilizado para retornar o status de um pedido.
+- 5️⃣ **DELETE /pedidos**: Utilizado para cancelar pedidos que ainda não foram finalizados.
 
 ## 📒 Cabeçalhos que aparecerão durante a documentação
 
@@ -66,7 +66,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![Corpo da Resposta JSON](./img/getallmenu.png)
+![image](./img/getallmenu.png)
 
 ### **Código de Status**
 
@@ -98,7 +98,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![Corpo da Resposta JSON](./img/Captura%20de%20tela%202025-02-18%20211322.png)
+![image](./img/Captura%20de%20tela%202025-02-18%20211322.png)
 
 ### **Código de Status**
 
@@ -143,7 +143,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![Corpo da Resposta JSON](./img/postatualizado.png)
+![image](./img/postatualizado.png)
 
 ### **Código de Status**
 
@@ -176,7 +176,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![Corpo da Resposta JSON](./img/status.pedido.png)
+![image](./img/status.pedido.png)
 
 ### **Código de Status**
 
@@ -209,8 +209,8 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![Corpo da Resposta JSON](./img/image.png)
-![Corpo da Resposta JSON](./img/Captura%20de%20tela%202025-02-18%20220820.png)
+![image](./img/image.png)
+![image](./img/Captura%20de%20tela%202025-02-18%20220820.png)
 
 
 ### **Código de Status**
