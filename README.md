@@ -66,7 +66,7 @@ A atividade foi criada para replicar o sistema de gestão de uma cafeteria renom
 
 ### **Corpo da Resposta(JSON)**
 
-![image](./img/getallmenu.png)
+![image](c:\Users\Evelyn\Pictures\Screenshots\getallmenu.png)
 
 ### **Código de Status**
 
